@@ -220,7 +220,7 @@ class EventListener implements Listener
 
                     $form->addButton(ucfirst("Create"));
                     $form->addButton(ucfirst("Invites [" . count($member->getInvites())) . "]");
-                    $form->setTitle("Partys");
+                    $form->setTitle("Parties");
                     $form->setContent("You are not in a party!");
                     $player->sendForm($form);
                 }
@@ -234,7 +234,7 @@ class EventListener implements Listener
                     });
 
                     $form->addButton(ucfirst("NoDebuff"));
-                    $form->setTitle("FFA Warps");
+                    $form->setTitle("FFA");
                     $form->setContent("Click to select a FFA arena!");
                     $player->sendForm($form);
             }
